@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tours - Love and Travel</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <nav class="nav container">
+        <a href="#" class="nav__logo">Tours</a>
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a href="#" class="nav__link active">Home</a>
+          </li>
+          <li class="nav__item none">
+            <a href="#" class="nav__link">Tours</a>
+          </li>
+          <li class="nav__item"><a href="#" class="nav__link">About</a></li>
+          <li class="nav__item none">
+            <a href="#" class="nav__link">Pages</a>
+          </li>
+          <li class="nav__item none"><a href="#" class="nav__link">Blog</a></li>
+          <li class="nav__item"><a href="#" class="nav__link">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="hero__content container">
+          <h1 class="hero__title">Love and Travel</h1>
+          <p class="hero__subtitle">
+            Your journey begins here, with our curated travel experiences.
+          </p>
+          <a href="#" class="btn btn--primary">Discover More</a>
+        </div>
+        <div class="booking__form-container">
+          <form action="#" class="booking__form">
+            <div class="form-groups">
+              <div class="form__group">
+                <label for="destination">Destination</label>
+                <input
+                  type="text"
+                  id="destination"
+                  placeholder="Where are you going?"
+                />
+              </div>
+              <div class="form__group">
+                <label for="check-in">Check In</label>
+                <input type="date" id="check-in" />
+              </div>
+              <div class="form__group">
+                <label for="check-out">Check Out</label>
+                <input type="date" id="check-out" />
+              </div>
+              <div class="form__group">
+                <label for="guests">Guests</label>
+                <input type="number" id="guests" placeholder="2 Adults" />
+              </div>
+            </div>
+            <button type="submit" class="btn btn--primary form__btn">
+              Find Tour
+            </button>
+          </form>
+        </div>
+      </section>
+
+      <section class="section container">
+        <div class="plan__grid">
+          <div class="plan__image">
+            <img src="./images/about.jpg" alt="Woman on a bridge in Venice" />
+          </div>
+          <div class="plan__content">
+            <p class="section__tag">About Us</p>
+            <h2 class="section__title">Plan Your Trip with Tours</h2>
+            <p class="section__description">
+              There are many variations of passages of lorem ipsum available,
+              but the majority have suffered alteration in some form, by
+              injected humour, or randomised words which don't look even
+              slightly believable.
+            </p>
+            <ul class="plan__list">
+              <li><i class="bx bx-check"></i> Invest in your simply</li>
+              <li><i class="bx bx-check"></i> Experience is the best</li>
+              <li>
+                <i class="bx bx-check"></i> Travel connects you with yourself
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="section container">
+        <p class="section__tag text-center">Featured Tours</p>
+        <h2 class="section__title text-center">Most Popular Tours</h2>
+        <div class="tours__grid">
+          <div class="card-tracker">
+            <div class="card">
+              <img
+                src="https://images.unsplash.com/photo-1523906834658-6e24ef2386f9?q=80&w=1883"
+                alt="Venice, Italy"
+                class="card__img"
+              />
+              <div class="card__body">
+                <div class="card__header">
+                  <h3 class="card__title">Venice, Italy</h3>
+                  <div class="card__rating">
+                    <i class="bx bxs-star"></i><span>4.8</span>
+                  </div>
+                </div>
+                <p class="card__duration">
+                  <i class="bx bx-time-five"></i> 3 Days, 4 Nights
+                </p>
+                <div class="card__footer">
+                  <p class="card__price">from <span>$250.00</span></p>
+                  <a href="#" class="card__link"
+                    >Explore <i class="bx bx-right-arrow-alt"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <img
+                src="./images/s1.jpg"
+                alt="Istanbul, Turkey"
+                class="card__img"
+              />
+              <div class="card__body">
+                <div class="card__header">
+                  <h3 class="card__title">Istanbul, Turkey</h3>
+                  <div class="card__rating">
+                    <i class="bx bxs-star"></i><span>4.5</span>
+                  </div>
+                </div>
+                <p class="card__duration">
+                  <i class="bx bx-time-five"></i> 5 Days, 6 Nights
+                </p>
+                <div class="card__footer">
+                  <p class="card__price">from <span>$450.00</span></p>
+                  <a href="#" class="card__link"
+                    >Explore <i class="bx bx-right-arrow-alt"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <img
+                src="./images/s2.jpg"
+                alt="Paris, France"
+                class="card__img"
+              />
+              <div class="card__body">
+                <div class="card__header">
+                  <h3 class="card__title">Paris, France</h3>
+                  <div class="card__rating">
+                    <i class="bx bxs-star"></i><span>4.9</span>
+                  </div>
+                </div>
+                <p class="card__duration">
+                  <i class="bx bx-time-five"></i> 4 Days, 5 Nights
+                </p>
+                <div class="card__footer">
+                  <p class="card__price">from <span>$550.00</span></p>
+                  <a href="#" class="card__link"
+                    >Explore <i class="bx bx-right-arrow-alt"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <img
+                src="./images/s4.jpg"
+                alt="Lake Bled, Slovenia"
+                class="card__img"
+              />
+              <div class="card__body">
+                <div class="card__header">
+                  <h3 class="card__title">Lake Bled, Slovenia</h3>
+                  <div class="card__rating">
+                    <i class="bx bxs-star"></i><span>4.7</span>
+                  </div>
+                </div>
+                <p class="card__duration">
+                  <i class="bx bx-time-five"></i> 2 Days, 3 Nights
+                </p>
+                <div class="card__footer">
+                  <p class="card__price">from <span>$175.00</span></p>
+                  <a href="#" class="card__link"
+                    >Explore <i class="bx bx-right-arrow-alt"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+
+            <div class="card">
+              <img
+                src="https://images.unsplash.com/photo-1523906834658-6e24ef2386f9?q=80&w=1883"
+                alt="Venice, Italy"
+                class="card__img"
+              />
+              <div class="card__body">
+                <div class="card__header">
+                  <h3 class="card__title">Venice, Italy</h3>
+                  <div class="card__rating">
+                    <i class="bx bxs-star"></i><span>4.8</span>
+                  </div>
+                </div>
+                <p class="card__duration">
+                  <i class="bx bx-time-five"></i> 3 Days, 4 Nights
+                </p>
+                <div class="card__footer">
+                  <p class="card__price">from <span>$250.00</span></p>
+                  <a href="#" class="card__link"
+                    >Explore <i class="bx bx-right-arrow-alt"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <img
+                src="./images/s1.jpg"
+                alt="Istanbul, Turkey"
+                class="card__img"
+              />
+              <div class="card__body">
+                <div class="card__header">
+                  <h3 class="card__title">Istanbul, Turkey</h3>
+                  <div class="card__rating">
+                    <i class="bx bxs-star"></i><span>4.5</span>
+                  </div>
+                </div>
+                <p class="card__duration">
+                  <i class="bx bx-time-five"></i> 5 Days, 6 Nights
+                </p>
+                <div class="card__footer">
+                  <p class="card__price">from <span>$450.00</span></p>
+                  <a href="#" class="card__link"
+                    >Explore <i class="bx bx-right-arrow-alt"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <img
+                src="./images/s2.jpg"
+                alt="Paris, France"
+                class="card__img"
+              />
+              <div class="card__body">
+                <div class="card__header">
+                  <h3 class="card__title">Paris, France</h3>
+                  <div class="card__rating">
+                    <i class="bx bxs-star"></i><span>4.9</span>
+                  </div>
+                </div>
+                <p class="card__duration">
+                  <i class="bx bx-time-five"></i> 4 Days, 5 Nights
+                </p>
+                <div class="card__footer">
+                  <p class="card__price">from <span>$550.00</span></p>
+                  <a href="#" class="card__link"
+                    >Explore <i class="bx bx-right-arrow-alt"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <img
+                src="./images/s4.jpg"
+                alt="Lake Bled, Slovenia"
+                class="card__img"
+              />
+              <div class="card__body">
+                <div class="card__header">
+                  <h3 class="card__title">Lake Bled, Slovenia</h3>
+                  <div class="card__rating">
+                    <i class="bx bxs-star"></i><span>4.7</span>
+                  </div>
+                </div>
+                <p class="card__duration">
+                  <i class="bx bx-time-five"></i> 2 Days, 3 Nights
+                </p>
+                <div class="card__footer">
+                  <p class="card__price">from <span>$175.00</span></p>
+                  <a href="#" class="card__link"
+                    >Explore <i class="bx bx-right-arrow-alt"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="experience">
+        <div class="experience__content container">
+          <p class="section__tag text-center light-text">Experience</p>
+          <h2 class="section__title text-center light-text">
+            We have over 15 years experience
+          </h2>
+          <div class="experience__grid">
+            <div class="stat">
+              <h3 class="stat__number" data-target="200">0</h3>
+              <p class="stat__label">Happy Travelers</p>
+            </div>
+            <div class="stat">
+              <h3 class="stat__number" data-target="1000">0</h3>
+              <p class="stat__label">Tours</p>
+            </div>
+            <div class="stat">
+              <h3 class="stat__number" data-target="20">0</h3>
+              <p class="stat__label">Destinations</p>
+            </div>
+            <div class="stat">
+              <h3 class="stat__number" data-target="130">0</h3>
+              <p class="stat__label">Positive Reviews</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section container">
+        <p class="section__tag text-center">Our Services</p>
+        <h2 class="section__title text-center">
+          Our Amazing services for your travel
+        </h2>
+        <div class="services__grid">
+          <div class="service__card">
+            <div class="service__icon"><i class="bx bxs-camera"></i></div>
+            <h3 class="service__title">Wildlife Tours</h3>
+            <p class="service__description">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            </p>
+          </div>
+          <div class="service__card">
+            <div class="service__icon"><i class="bx bxs-landscape"></i></div>
+            <h3 class="service__title">Adventure Tours</h3>
+            <p class="service__description">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            </p>
+          </div>
+          <div class="service__card">
+            <div class="service__icon"><i class="bx bxs-plane-alt"></i></div>
+            <h3 class="service__title">Trip Planning</h3>
+            <p class="service__description">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section container">
+        <div class="why__choose">
+          <div class="plan__content">
+            <p class="section__tag">Why Us?</p>
+            <h2 class="section__title">Why Choose Tours!</h2>
+            <p class="section__description">
+              There are many variations of passages of lorem ipsum available,
+              but the majority have suffered alteration in some form.
+            </p>
+            <div class="choose__feature">
+              <div class="feature__icon"><i class="bx bx-user-check"></i></div>
+              <div class="feature__text">
+                <h4>Professional and Certified</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              </div>
+            </div>
+            <div class="choose__feature">
+              <div class="feature__icon">
+                <i class="bx bx-calendar-check"></i>
+              </div>
+              <div class="feature__text">
+                <h4>Get Instant Tour Bookings</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              </div>
+            </div>
+          </div>
+          <div class="plan__image">
+            <img src="./images/about2.jpg" alt="Woman walking in a city" />
+          </div>
+        </div>
+      </section>
+
+      <section class="section section--light-bg">
+        <div class="container">
+          <p class="section__tag text-center">Our Blog</p>
+          <h2 class="section__title text-center">
+            Learn more from our latest Blog Posts
+          </h2>
+          <div class="blog__grid">
+            <div class="blog__card">
+              <img
+                src="https://images.unsplash.com/photo-1498307833015-e7b400441eb8?q=80&w=1974"
+                alt="Blog post image"
+                class="blog__img"
+              />
+              <div class="blog__body">
+                <span class="blog__date">August 25, 2025</span>
+                <h3 class="blog__title">
+                  Where can I find beautiful places for travel?
+                </h3>
+              </div>
+            </div>
+            <div class="blog__card">
+              <img
+                src="https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?q=80&w=2021"
+                alt="Blog post image"
+                class="blog__img"
+              />
+              <div class="blog__body">
+                <span class="blog__date">September 10, 2025</span>
+                <h3 class="blog__title">
+                  How to save money on your life a long trip?
+                </h3>
+              </div>
+            </div>
+            <div class="blog__card">
+              <img
+                src="https://images.unsplash.com/photo-1500835556837-99ac94a94552?q=80&w=1887"
+                alt="Blog post image"
+                class="blog__img"
+              />
+              <div class="blog__body">
+                <span class="blog__date">October 02, 2025</span>
+                <h3 class="blog__title">
+                  Top 10 Romantic destinations for couples
+                </h3>
+              </div>
+            </div>
+          </div>
+          <div class="text-center">
+            <a href="#" class="btn btn--primary">View All Posts</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section container">
+        <div class="promo__grid">
+          <div class="promo__image">
+            <img
+              src="./images/img.jpg"
+              alt="Smiling woman giving a thumbs up"
+            />
+          </div>
+          <div class="promo__content">
+            <div class="top-promo-cont">
+              <p class="discount">FOR 30% DISCOUNT</p>
+              <h2 class="section__title">GET OUR PROMOCODE</h2>
+            </div>
+            <div class="bottom-promo-cont">
+              <p class="section__description promo">
+                Subscribe to our newsletter to get the latest updates and
+                special offers. Don't miss out!
+              </p>
+              <div class="promo__form-container">
+                <p class="deal">Never miss a deal!</p>
+                <form class="promo__form">
+                  <input type="email" placeholder="Enter your email" />
+                  <button type="submit" class="btn btn--primary">
+                    Subscribe
+                  </button>
+                </form>
+              </div>
+              <div class="get-mobile">
+                <p>(Or) Get Our Mobile Apps</p>
+                <div class="mobile-icons">
+                  <a href="#"><i class="bx bxl-apple"></i></a>
+                  <a href="#"><i class="bx bxl-play-store"></i></a>
+                  <a href="#"><i class="bx bxl-windows"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer__container container">
+        <div class="footer__col">
+          <h3 class="footer__logo">Tours</h3>
+          <p>
+            We are a travel agency that provides amazing tour packages. Let us
+            help you plan your next adventure!
+          </p>
+          <div class="footer__socials">
+            <a href="#"><i class="bx bxl-facebook"></i></a>
+            <a href="#"><i class="bx bxl-twitter"></i></a>
+            <a href="#"><i class="bx bxl-instagram"></i></a>
+            <a href="#"><i class="bx bxl-linkedin"></i></a>
+          </div>
+        </div>
+        <div class="footer__col">
+          <h4 class="footer__title">Quick Links</h4>
+          <ul>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Tours</a></li>
+            <li><a href="#">Destinations</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4 class="footer__title">Contact Info</h4>
+          <ul>
+            <li><i class="bx bx-map"></i> 123 Street, New York, USA</li>
+            <li><i class="bx bx-phone"></i> +1 234 567 890</li>
+            <li><i class="bx bx-envelope"></i> info@tours.com</li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4 class="footer__title">Newsletter</h4>
+          <p>Subscribe for latest updates</p>
+          <form class="footer__form">
+            <input type="email" placeholder="Your email" />
+            <button type="submit"><i class="bx bxs-send"></i></button>
+          </form>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p>&copy; 2025 Tours. All Rights Reserved.</p>
+      </div>
+    </footer>
+
+    <div class="social-bar">
+      <a href="#"><i class="bx bxl-facebook-circle"></i></a>
+      <a href="#"><i class="bx bxl-twitter"></i></a>
+      <a href="#"><i class="bx bxl-instagram-alt"></i></a>
+      <a href="#"><i class="bx bxl-youtube"></i></a>
+      <a href="#"><i class="bx bxl-linkedin-square"></i></a>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
