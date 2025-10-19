@@ -267,6 +267,7 @@ img {
 }
 .form__group input[type="date"]::-webkit-calendar-picker-indicator {
   cursor: pointer;
+  background-color: transparent;
 }
 
 .form__group input:hover {
