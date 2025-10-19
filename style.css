@@ -267,7 +267,9 @@ img {
 }
 .form__group input[type="date"]::-webkit-calendar-picker-indicator {
   cursor: pointer;
-  background-color: transparent;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
 }
 
 .form__group input:hover {
@@ -924,12 +926,24 @@ img {
 }
 
 @media screen and (max-width: 600px) {
+  .hero__title {
+    font-size: 3rem;
+  }
+
+  .hero__subtitle {
+    font-size: 1rem;
+  }
+
   .card-tracker {
     padding-left: 1rem;
   }
 
   .nav__list {
     gap: 1.5rem;
+  }
+
+  .nav__link {
+    font-size: 0.875rem;
   }
 
   .card {
