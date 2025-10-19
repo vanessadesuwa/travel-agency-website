@@ -327,6 +327,8 @@ img {
 .tours__grid {
   width: 100%;
   overflow: hidden;
+  overflow-x: auto;
+  scroll-behavior: smooth;
   padding-top: 2rem;
 }
 
@@ -335,6 +337,21 @@ img {
   width: 100%;
   gap: 2rem;
   animation: slide 30s linear infinite;
+}
+
+.card-tracker:hover {
+  animation-play-state: paused;
+}
+
+.tours__grid::-webkit-scrollbar {
+  height: 0;
+}
+.tours__grid:hover::-webkit-scrollbar {
+  height: 12px;
+}
+.tours__grid::-webkit-scrollbar-thumb {
+  background-color: var(--primary-color);
+  border-radius: 1rem;
 }
 
 /* --- Animation --- */
