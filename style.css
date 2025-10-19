@@ -927,7 +927,7 @@ img {
 
 @media screen and (max-width: 600px) {
   .hero__title {
-    font-size: 4rem;
+    font-size: 4.5rem;
   }
 
   .hero__subtitle {
