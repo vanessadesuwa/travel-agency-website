@@ -930,4 +930,8 @@ img {
   .nav__list {
     gap: 1.5rem;
   }
+
+  .card {
+    flex: 0 0 100%;
+  }
 }
