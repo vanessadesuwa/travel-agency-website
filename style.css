@@ -927,7 +927,7 @@ img {
 
 @media screen and (max-width: 600px) {
   .hero__title {
-    font-size: 4.5rem;
+    font-size: 4rem;
   }
 
   .hero__subtitle {
@@ -946,7 +946,11 @@ img {
     font-size: 0.875rem;
   }
 
-  .card {
-    flex: 0 0 100%;
+  .form__group input::placeholder {
+    font-size: 0;
+  }
+
+  .form__group input {
+    background-color: initial;
   }
 }
